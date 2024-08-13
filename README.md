@@ -7,13 +7,13 @@ with a Triple-Decoding Branch"
 ## The framework of the proposed BT-HRSCD
 ![image](https://github.com/iridescent524/BT-HRSCD/blob/main/BT-HRSCD-main/upload/overall.jpg)
 
-## "Usage of training code"
-  ···python
+## Usage of training code
+  ```python
   
   python train_SCD.py
-  ···
-## "Usage of testing code"
-  ···
+  ```
+## Usage of testing code
+  ```
   
   python pred_SCD.py
-  ···
+  ```
