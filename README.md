@@ -14,6 +14,5 @@ with a Triple-Decoding Branch"
   ```
 ## Usage of testing code
   ```
-  
   python pred_SCD.py
   ```
