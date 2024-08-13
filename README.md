@@ -8,8 +8,10 @@ with a Triple-Decoding Branch"
 ![image](https://github.com/iridescent524/BT-HRSCD/blob/main/BT-HRSCD-main/upload/overall.jpg)
 
 ## "Usage of training code"
-···
-python train_SCD.py
+  ···
+  python train_SCD.py
+  ···
 ## "Usage of testing code"
-···
-python pred_SCD.py
+  ···
+  python pred_SCD.py
+  ···
