@@ -10,7 +10,7 @@ with a Triple-Decoding Branch"
 ## Usage of training code
   ```python
   
-  python train_SCD.py
+  python train.py
   ```
 ## Usage of testing code
   ```
