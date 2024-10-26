@@ -52,30 +52,30 @@ class Fpn(nn.Module):
     def __init__(self):
         super(Fpn,self).__init__()
         out = [256,384,448,480]
-        self.conv1 = nn.Sequential(nn.Conv2d(480, 256, kernel_size=3, stride=1, padding=1),
+        self.conv1 = nn.Sequential(nn.Conv2d(480, 256, kernel_size=1, stride=1, padding=0),
                                        nn.BatchNorm2d(256),
                                        nn.ReLU(inplace=True)
                                        )
-        self.conv2 = nn.Sequential(nn.Conv2d(384, 384, kernel_size=3, stride=1, padding=1),
+        self.conv2 = nn.Sequential(nn.Conv2d(384, 384, kernel_size=1, stride=1, padding=0),
                                        nn.BatchNorm2d(384),
                                        nn.ReLU(inplace=True)
                                        )
-        self.conv3 = nn.Sequential(nn.Conv2d(448, 448, kernel_size=3, stride=1, padding=1),
+        self.conv3 = nn.Sequential(nn.Conv2d(448, 448, kernel_size=1, stride=1, padding=0),
                                        nn.BatchNorm2d(448),
                                        nn.ReLU(inplace=True)
                                        )
         
-        self.smooth1 = nn.Sequential(nn.Conv2d(32, 32, kernel_size=1, stride=1, padding=1),
+        self.smooth1 = nn.Sequential(nn.Conv2d(32, 32, kernel_size=1, stride=1, padding=0),
                                      nn.BatchNorm2d(32),
                                      nn.ReLU(inplace=True),
                                      nn.Conv2d(32, 32, kernel_size=3, stride=2, padding=1)
                                      )
-        self.smooth2 = nn.Sequential(nn.Conv2d(96, 96, kernel_size=1, stride=1, padding=1),
+        self.smooth2 = nn.Sequential(nn.Conv2d(96, 96, kernel_size=1, stride=1, padding=0),
                                      nn.BatchNorm2d(96),
                                      nn.ReLU(inplace=True),
                                      nn.Conv2d(96, 96, kernel_size=3, stride=2, padding=1)
                                      )
-        self.smooth3 = nn.Sequential(nn.Conv2d(224, 224, kernel_size=1, stride=1, padding=1),
+        self.smooth3 = nn.Sequential(nn.Conv2d(224, 224, kernel_size=1, stride=1, padding=0),
                                      nn.BatchNorm2d(224),
                                      nn.ReLU(inplace=True),
                                      nn.Conv2d(224 ,224, kernel_size=3, stride=2, padding=1)
